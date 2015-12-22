@@ -1,14 +1,54 @@
-body{
-    margin-top:50px;
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+
+*, body, html {
+    margin: 0;
+    padding: 0;
+    }
+
+body {
+    font-family: 'Roboto', sans-serif; font-weight: 400;
+    bottom: 0;
     }
 
 a, a:visited, a:hover, a:active {
-    color: inherit;
+    color:inherit;
+    text-decoration:none
     }
 
-/**
- * Sections
- */
+h2 .heading {
+    font-size: 17px;
+    font-weight: 500;
+    }
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+/* Column Classes */
+
+.row { 
+    width: 100%; 
+    max-width: 980px; 
+    min-width: 320px; 
+    margin: 0 auto; 
+    padding-left: 20px; 
+    padding-right: 20px; 
+    }
+
+.row .one.column { width: 6.38298%; }
+.row .two.columns { width: 14.89362%; }
+.row .three.columns { width: 23.40426%; }
+.row .four.columns { width: 31.91489%; }
+.row .five.columns { width: 40.42553%; }
+.row .six.columns { width: 48.93617%; }
+.row .seven.columns { width: 57.44681%; }
+.row .eight.columns { width: 65.95745%; }
+.row .nine.columns { width: 74.46809%; }
+.row .ten.columns { width: 82.97872%; }
+.row .eleven.columns { width: 91.48936%; }
+.row .twelve.columns { width: 100%; }
+
+/* Sections */
 
 #menu{
     background:#22458d;
@@ -25,28 +65,38 @@ a, a:visited, a:hover, a:active {
 #home{
     text-align: center;
     height:1000px;
+    -webkit-appearance: none;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
     }
 
 #about{
     text-align: center;
-    height:500px;
+    height:350px;
     }
 
 #experience{
-    background: #ecf0f1;
-    height:750px;
+    height:650px;
     text-align: center;
+    -webkit-appearance: none;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
     }
 
 #skills{
     text-align: center;
-    height:500px;
+    height:650px;
     }
 
 #portfolio{
-    background: #ecf0f1;
-    height:1000px;
     text-align: center;
+    height:1000px;
+    -webkit-appearance: none;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
     }
 
 #contact{
@@ -70,45 +120,198 @@ a, a:visited, a:hover, a:active {
 .nav ul li{
     list-style:none;
     display:inline;
+    margin-top:5%;
+    margin-right:2px;
+    margin-left:2px;
+    }
+
+.icons{
+    width:60%;
+    text-align:center;
+    display:inline;
+    }
+
+.icons ul li{
+    list-style:none;
+    display:inline;
+    position:relative;
+    top:10%;
     }
 
 .list ul li{
     list-style:none;
     margin-top:5%;
     margin-bottom:5%;
-    height:100%;
-    text-align: left;
+    margin-left: -1%;
 }
 
 .section{
-    margin:0px;
-    width:100%;
-    float:left;
-    text-shadow:1px 1px 2px #f0f0f0;
     }
 
-.heading {
+.container {
     height:100%;
     margin:0 auto;
     width:60%;
+    position:relative;
+    top: 50px;
     }
 
-.content {
-    position:relative;
-    top: 10%;
+.column {
+    left:0;
+    width:33.33%;
+    float:left;
+    }
+
+.column-content {
+    margin: 0 auto;
+    width: 70%;
+    text-align:center;
     }
 
 .row {
-    margin-top: -10px;
-    padding-left: 30px;
-    display:inline-block;
-    vertical-align:top;
+    padding-left:3%;
+    padding-top:3%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    }
+
+#arrow {
+    position:relative;
+    top: 60%;
+    }
+
+#blurb {
+    display:table;
+    }
+
+#icon-container {
+    position:relative;
+    top:0%;
     }
 
 #splash {
     position:relative;
-    top: 30%;
+    top: 40%;
     }
+
+/**
+ * Chart
+ */
+
+.chart { 
+    margin-top:8%;
+    margin-left:-5%;
+    width: 100%; 
+    }
+
+.chart li {
+    border-radius:4px 4px 0 0; /* Remember vendor prefixes */
+    box-shadow:0 1px 0 0 rgba(255,255,255,.6) inset; /* Remember vendor prefixes */
+    display:block;
+    height:125px;
+    position:relative;
+    text-align:center;
+    vertical-align:bottom;
+    }
+
+.chart .axis { 
+    display:none;
+    top:-23px;
+    width:11%;
+    }
+
+.chart .label {
+    margin: 30px -25px 90px 0;
+    }
+
+.chart .percent {
+    font-size:30px;
+    letter-spacing:-2px;
+    opacity:.4;
+    width:100%;
+    }
+
+.chart .skill {
+    font-size:20px;
+    letter-spacing:-1px;
+    opacity:.4;
+    width:100%;
+    }
+
+.chart hr {
+    margin-left:25%;
+    width:600%;
+    border-top: dotted 1px;
+    opacity:.3;
+}
+
+.chart .red {
+    background:#c84648;
+    background-image:linear-gradient(#d86d6e, #c84648 70%);
+    border:1px solid #c84648;
+    }
+
+.chart .orange {
+    background:#de7f36;
+    background-image:linear-gradient(#f3b27e, #de7f36 70%);
+    border:1px solid #de7f36;
+    }
+
+.chart .yellow {
+    background:#e6ae3f;
+    background-image:linear-gradient(#edc469, #e6ae3f 70%);
+    border:1px solid #e6ae3f;
+    }
+
+.chart .green {
+    background:#6ec428;
+    background-image:linear-gradient(#a4f184, #6ec428 70%);
+    border:1px solid #6ec428;
+    }
+
+.chart .blue {
+    background:#4274c4;
+    background-image:linear-gradient(#75aae2, #4274c4 70%);
+    border:1px solid #4274c4;
+    }
+
+@media (min-width:700px) {
+      .chart {
+        /* background:url("http:/cl.ly/QSpc/bg-chart.png") right top repeat-x; */
+        height:300px;
+        }
+      .chart li {
+        display:inline-block;
+        height:360px;
+        margin:0 1.8% 0 0;
+        width:12%;
+        }
+      .chart .axis {
+        display:inline-block;
+        }
+      .chart .percent {
+        font-size:20px;
+        position:absolute;
+        bottom:20px;
+        }
+      .chart .percent span {
+        font-size:30px;
+        font-size:1.875rem;
+        }
+      .chart .skill {
+        margin:0 auto;
+        font-size:20px;
+        position:absolute;
+        bottom:10px;
+        }
+}
+
+@media (min-width: 1000px) {
+    .chart .percent {
+      font-size:62px;
+    }
+}
 
 /**
  * Image slider
@@ -126,4 +329,3 @@ a, a:visited, a:hover, a:active {
     padding:0;
     list-style:none;
  }
-

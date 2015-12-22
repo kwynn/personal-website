@@ -12,125 +12,160 @@
 
 <body>
 
-  <section class="section" id="home">
-    <div class="heading">
-      <div id="splash">
-        <h1>Hello, I'm Kevin.</h1>
-        <h3>Programmer. Photographer.</h3>
-      </div>
-    </div>
-  </section>
-
   <section id="menu">
     <div class="nav"> 
       <ul>
-        <li>
-          <a class="logo">KWYNN</a>
-        </li>
-        <li>
-          <a href="#home">Home</a>
-        </li>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#experience">Experience</a>
-        </li>
-        <li>
-          <a href="#skills">Skills</a>
-        </li>
-        <li>
-          <a href="#portfolio">Portfolio</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
+        <li><a class="logo">KWYNN</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul> 
     </div>
   </section>
 
-  <section class="section" id="about">
-    <div class="heading">
-      <div class="content">
-        <h2>ABOUT ME</h2>
-        <p>I'm a senior at Pomona College in Claremont, California, studying Computer Science; my technical interests lie in mobile and web development. I will be working for athenahealth in their San Francisco office come Fall 2016. Besides programming and Computer Science more generally, I also dabble in photography and enjoy the occasional boardgame.</p>
+  <section id="home">
+    <div class="container">
+      <div id="splash">
+        <h1>Hello, I'm Kevin.</h1>
+        <h3>Developer. Photographer.</h3>
+      </div>
+      <div id="arrow">
+        <a href="#about">
+          <img src="./resources/chevron.png" style="width:64px;height:64px;">
+        </a>
       </div>
     </div>
   </section>
 
-  <section class="section" id="experience">
-    <div class="heading">
-      <div class="content">
-        <h2>EXPERIENCE</h2>
-        <div class="list">
-        <ul>
-          <li>
-            <img src="./logos/athenahealth.png" style="width:128px;height:128px;"/>
-            <div class="row">
-              <h4>athenahealth</h4>
-              <p></p>
+  <section id="about">
+    <div class="container">
+      <h2 class="section">ABOUT ME</h2>
+      <div>
+        <div id="blurb">
+          <img src="./resources/circle_headshot.png" style="width:192px;height:192px;">
+          <div class="row">
+            <div>
+              Kevin Wynn <br>
+              Software Developer
             </div>
-          </li>
-          <li>
-            <img src="./logos/webroot.png" style="width:128px;height:128px;"/>
-            <div class="row">
-              <h4>Webroot</h4>
-              <p></p>
-            </div>
-          </li>
-          <li>
-            <img src="./logos/pomona_college.png" style="width:128px;height:128px;"/>
-            <div class="row">
-              <h4>Pomona College</h4>
-              <p></p>
-            </div>
-          </li>
-        <ul>
+            <p>I'm a senior at Pomona College in Claremont, California, studying Computer Science; my technical interests lie in mobile and web development. I will be working for athenahealth in their San Francisco office come Fall 2016. Besides programming and Computer Science more generally, I also dabble in photography and enjoy the occasional boardgame.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="section" id="skills">
-    <div class="heading">
-      <div class="content">
-        <h2>TECHNICAL SKILLS</h2>
-        <div>Languages</div>
-        <div>Front-End</div>
-        <div>Back-End</div>
+      <div class="icons"> 
+        <ul>
+          <li>
+            <a target="_blank" href="https://www.facebook.com/kwynn16">
+              <img src="./resources/facebook.png" style="width:32px;height:32px;">
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/kwynn16">
+              <img src="./resources/linkedin.png" style="width:32px;height:32px;">
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/kwynn">
+              <img src="./resources/github.png" style="width:32px;height:32px;">
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/kevwynnnn">
+              <img src="./resources/twitter.png" style="width:32px;height:32px;">
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.instagram.com/kevwynn">
+              <img src="./resources/instagram.png" style="width:32px;height:32px;">
+            </a>
+          </li>
+        </ul> 
       </div>
     </div>
   </section>
 
-  <section class="section" id="portfolio">
-    <div class="heading">
-     <div class="content">
-        <h2>PHOTOGRAPHY</h2>
-        <!-- <div class="flex-container">
-          <div class="flexslider">
-            <ul class="slides">
-              <li>
-                <img src="./photos/berkeley_milky_way.jpg"/>
-              </li>
-              <li>
-                <img src="./photos/indian_rock.jpg"/>
-              </li>
-              <li>
-                <img src="./photos/seal_beach.jpg"/>
-              </li>
+  <section id="experience">
+    <div class="container">
+      <h2 class="section">EXPERIENCE</h2>
+      <div class="list">
+      <ul>
+        <li class="column">
+          <div class="column-content">
+            <img src="./logos/athenahealth.png" style="width:128px;height:128px;">
+            <h4>athenahealth</h4>
+            <p>On a mobile development team at athenahealth's San Francisco office, I was tasked with the implementation of an Android prototype for a new product. This prototype was presented to a subset of the board of vice-presidents and was readily approved for further R&D.</p>
           </div>
-        </div> -->
+        </li>
+        <li class="column">
+          <div class="column-content">
+            <img src="./logos/webroot.png" style="width:128px;height:128px;">
+            <h4>Webroot</h4>
+            <p>A team of four students, including myself, are in the process of developing a social reputation evaluation system for Webroot, contracted through Harvey Mudd College. I am in charge of the design and implementation of the mobile user-interface.</p>
+          </div>
+        </li>
+        <li class="column">
+          <div class="column-content">
+            <img src="./logos/pomona_college.png" style="width:128px;height:128px;">
+            <h4>Pomona College</h4>
+            <p>Lorem ipsum</p>
+          </div>
+        </li>
+      <ul>
       </div>
     </div>
   </section>
 
-  <section class="section" id="contact">
-    <div class="heading">
-      <div class="content">
-        <h2>CONTACT INFO</h2>
-        <h4>wynn.k16@gmail.com</h4>
-        <h4>170 E. Sixth Street Claremont, CA 91763</h4>
+  <section id="skills">
+    <div class="container">
+      <h2 class="section">TECHNICAL SKILLS</h2>
+      <div>
+        <ul class="chart">
+          <li class="axis">
+            <div class="label">Guru<hr></div>
+            <div class="label">Aficionado<hr></div>
+            <div class="label">Enthusiast<hr></div>
+            <div class="label">Dabbler<hr></div>
+          </li>
+          <li class="bar orange" style="height:75%;">
+            <div class="percent">75<span>%</span></div>
+            <div class="skill">Java</div>
+          </li>
+          <li class="bar blue" style="height:80%;">
+            <div class="percent">80<span>%</span></div>
+            <div class="skill">Python</div>
+          </li>
+          <li class="bar red" style="height:70%;">
+            <div class="percent">70<span>%</span></div>
+            <div class="skill">Ruby on Rails</div>
+          </li>
+          <li class="bar green" style="height:85%;">
+            <div class="percent">85<span>%</span></div>
+            <div class="skill">Android</div>
+          </li>
+          <li class="bar yellow" style="height:70%;">
+            <div class="percent">70<span>%</span></div>
+            <div class="skill">HTML/CSS</div>
+          </li>
+        </ul>
       </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <h2 class="section">PHOTOGRAPHY</h2>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section">CONTACT INFO</h2>
+      <h5>wynn.k16@gmail.com</h5>
+      <h5>170 E. Sixth Street Claremont, CA 91763</h5>
+      <h5>+1 (909) 524-7675</h5>
     </div>
   </section>
 
