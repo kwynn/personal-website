@@ -7,24 +7,11 @@
   <meta name="description" content="Programmer. Photographer."/>
   <meta name="author" content="Kevin Wynn"/>
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 </head>
 
 <body>
-
-  <section id="menu">
-    <div class="nav"> 
-      <ul>
-        <li><a class="logo">KWYNN</a></li>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul> 
-    </div>
-  </section>
 
   <section id="home">
     <div class="container">
@@ -33,16 +20,29 @@
         <h3>Developer. Photographer.</h3>
       </div>
       <div id="arrow">
-        <a href="#about">
+        <a href="#menu">
           <img src="./resources/chevron.png" style="width:64px;height:64px;">
         </a>
       </div>
     </div>
   </section>
 
+  <section id="menu">
+    <div id="navbar"> 
+      <ul>
+        <li><a href="#home">KWYNN</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#experience">EXPERIENCE</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul> 
+    </div>
+  </section>
+
   <section id="about">
     <div class="container">
-      <h2 class="section">ABOUT ME</h2>
+      <h2 class="title">ABOUT ME</h2>
       <div>
         <div id="blurb">
           <img src="./resources/circle_headshot.png" style="width:192px;height:192px;">
@@ -89,7 +89,7 @@
 
   <section id="experience">
     <div class="container">
-      <h2 class="section">EXPERIENCE</h2>
+      <h2 class="title">EXPERIENCE</h2>
       <div class="list">
       <ul>
         <li class="column">
@@ -120,7 +120,7 @@
 
   <section id="skills">
     <div class="container">
-      <h2 class="section">TECHNICAL SKILLS</h2>
+      <h2 class="title">TECHNICAL SKILLS</h2>
       <div>
         <ul class="chart">
           <li class="axis">
@@ -156,13 +156,26 @@
 
   <section id="portfolio">
     <div class="container">
-      <h2 class="section">PHOTOGRAPHY</h2>
+      <h2 class="title">PHOTOGRAPHY</h2>
+      <!--<div class="flexslider">
+        <ul class="slides">
+          <li>
+            <img src="./photos/berkeley_milky_way.jpg"/>
+          </li>
+          <li>
+            <img src="./photos/indian_rock.jpg"/>
+          </li>
+          <li>
+            <img src="./photos/seal_beach.jpg"/>
+          </li>
+        </ul>
+      </div>-->
     </div>
   </section>
 
   <section id="contact">
     <div class="container">
-      <h2 class="section">CONTACT INFO</h2>
+      <h2 class="title">CONTACT INFO</h2>
       <h5>wynn.k16@gmail.com</h5>
       <h5>170 E. Sixth Street Claremont, CA 91763</h5>
       <h5>+1 (909) 524-7675</h5>
